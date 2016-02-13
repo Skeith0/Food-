@@ -20,7 +20,7 @@ int main(int argc, char *argv[]){
 	}
 
 	bzero((char *) &serv_addr, sizeof(serv_addr));
-	protno = 5001;
+	portno = 5001;
 
 	serv_addr.sin_family = AF_INET;
 	serv_addr.sin_addr.s_addr = INADDR_ANY;
@@ -59,4 +59,4 @@ int main(int argc, char *argv[]){
 	}
 
 	return 0;
-}
+}	
